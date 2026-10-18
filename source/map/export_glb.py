@@ -1,11 +1,11 @@
-"""Export a map .blend to glTF (.glb) for the collision cooker (OMG-27).
+"""Export a map .blend to glTF (.glb) for the collision cooker.
 
 Run with Blender's Python (bpy), from the repo root:
     blender-py source/map/export_glb.py -- source/map/box_arena.blend source/map/box_arena.glb
 
 What is exported: every mesh object. The cooker decides what is solid by name (see README).
 Units: Blender scene units are meters (checked by the cooker). Axes: glTF is Y-up. Blender is Z-up.
-The exporter applies the Z-up to Y-up change. The cooker reverses it (see D-32).
+The exporter applies the Z-up to Y-up change. The cooker reverses it.
 """
 import sys
 import bpy
