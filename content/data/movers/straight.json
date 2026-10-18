@@ -1,0 +1,8 @@
+{
+  "kind": "mover_params",
+  "variant": "straight",
+  "gravity": false,
+  "lifetime_ticks": 180,
+  "speed_mm_per_s": 23000,
+  "filter": "world"
+}

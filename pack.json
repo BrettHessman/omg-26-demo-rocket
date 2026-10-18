@@ -1,0 +1,15 @@
+{
+  "name": "rocket-duel",
+  "version": "0.1.0",
+  "engine_api": "0.1",
+  "root": true,
+  "dependencies": [],
+  "scripts": [
+    {
+      "file": "scripts/rocket_mover.lua",
+      "place": "mover_step",
+      "variant": "straight",
+      "capabilities": ["sweep"]
+    }
+  ]
+}

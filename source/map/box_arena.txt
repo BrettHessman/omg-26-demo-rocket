@@ -1,0 +1,12 @@
+# box_arena collision source (simple box list, MVP only)
+# One box per line: min_x min_y min_z max_x max_y max_z (millimeters, integers)
+# Consumed by the collision cooker (OMG-27) to write content/map/box_arena.omgcol.
+# Floor
+-20000 -20000 -1000 20000 20000 0
+# Walls
+-20000 -20000 0 -19000 20000 15000
+19000 -20000 0 20000 20000 15000
+-20000 -20000 0 20000 -19000 15000
+-20000 19000 0 20000 20000 15000
+# Center block
+-2000 -2000 0 2000 2000 2000

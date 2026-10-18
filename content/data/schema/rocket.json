@@ -1,0 +1,10 @@
+{
+  "kind": "schema",
+  "entity": "ActorProjectileRocket",
+  "fields": [
+    {"name": "position", "kind": "vec3", "unit": "mm", "authority": "server", "rate": "high", "criticality": "critical"},
+    {"name": "velocity", "kind": "vec3", "unit": "mm_per_tick", "authority": "server", "rate": "high", "criticality": "critical"},
+    {"name": "shooter", "kind": "actor_handle", "authority": "server", "rate": "once", "criticality": "critical"},
+    {"name": "lifetime", "kind": "int", "bits": 16, "unit": "ticks", "authority": "server", "rate": "low", "criticality": "critical"}
+  ]
+}

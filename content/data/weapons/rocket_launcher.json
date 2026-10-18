@@ -1,0 +1,16 @@
+{
+  "kind": "weapon",
+  "id": "rocket_launcher",
+  "refire_ticks": 48,
+  "ammo_cap": 10,
+  "starting_ammo": 10,
+  "direct_damage": 100,
+  "splash_damage": 120,
+  "splash_radius_mm": 3000,
+  "self_splash_scale_percent": 50,
+  "projectile": "ActorProjectileRocket",
+  "presentation": {
+    "fire_sound": "sounds/rocket_fire.ogg",
+    "explosion_effect": "effects/rocket_explosion"
+  }
+}
