@@ -12,12 +12,12 @@ Format: `PACKAGE_FORMAT.md` in the workspace repo (P1, OMG-12).
   - `map/`: cooked collision blobs (`.omgcol`). Generated from `source/` by the cooker (OMG-27).
 - `source/`: authoring inputs. Not packaged.
   - `source/map/box_arena.blend`: the map (Blender 5.0.1). Collision: mesh objects or materials whose
-    name ends in `-col` (D-32). Not committed yet: D-24 says source files use Git LFS, which this repo
-    does not have set up.
+    name ends in `-col` (D-32). Tracked with Git LFS (`*.blend`).
   - `source/map/export_glb.py`: exports the `.blend` to `source/map/box_arena.glb` (derived, ignored).
-  - `source/map/box_arena.txt`: the old box list, superseded by the `.blend`. To be removed.
 
 ## Status of values
+
+Map: spawns sit on the flat z=2 m ring (surface + 0.5 m), ammo at the z=0 center pit. Verified by ray cast.
 
 Provisional: rocket lifetime (180 ticks), weapon refire and ammo, pickup timings, velocity
 representation, filter value `world`, int bit widths. Each will be set with the Script API

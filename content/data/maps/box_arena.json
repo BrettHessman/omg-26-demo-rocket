@@ -2,12 +2,12 @@
   "kind": "map",
   "id": "box_arena",
   "collision": "map/box_arena.omgcol",
-  "bounds_mm": {"min": [-20000, -20000, -2000], "max": [20000, 20000, 15000]},
+  "bounds_mm": {"min": [-30000, -30000, -1000], "max": [30000, 30000, 10000]},
   "spawn_points": [
-    {"position_mm": [-15000, -15000, 500], "yaw_deg": 45},
-    {"position_mm": [15000, 15000, 500], "yaw_deg": 225},
-    {"position_mm": [-15000, 15000, 500], "yaw_deg": 315},
-    {"position_mm": [15000, -15000, 500], "yaw_deg": 135}
+    {"position_mm": [-28000, -28000, 2500], "yaw_deg": 45},
+    {"position_mm": [28000, 28000, 2500], "yaw_deg": 225},
+    {"position_mm": [-28000, 28000, 2500], "yaw_deg": 315},
+    {"position_mm": [28000, -28000, 2500], "yaw_deg": 135}
   ],
   "ammo_pickups": [
     {"position_mm": [0, 0, 500], "ammo": 5, "respawn_ticks": 600}
