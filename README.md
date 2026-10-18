@@ -25,11 +25,8 @@ representation, filter value `world`, int bit widths. Each will be set with the 
 
 ## Build
 
-Not yet. Export, then cook and pack:
+1. Export the map: `blender-py source/map/export_glb.py -- source/map/box_arena.blend source/map/box_arena.glb`
+2. Pack: `omg-pack pack . dist/` (output in `dist/`, not committed). `pack.json` `maps` entries are cooked
+   into `map/` during packing (D-32).
 
-```
-blender-py source/map/export_glb.py -- source/map/box_arena.blend source/map/box_arena.glb
-```
-
-`blender-py` is the bpy 5.0.1 runner in `~/.local/share/omg-tools/`. The cooker (OMG-27) and `omg-pack`
-(OMG-14) are next.
+`blender-py` is the bpy 5.0.1 runner in `~/.local/share/omg-tools/`.
