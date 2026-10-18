@@ -10,7 +10,12 @@ Format: `PACKAGE_FORMAT.md` in the workspace repo (P1, OMG-12).
   - `data/`: JSON definitions (schema, entities, movers, weapons, gamemodes, maps).
   - `scripts/`: Luau sources (places).
   - `map/`: cooked collision blobs (`.omgcol`). Generated from `source/` by the cooker (OMG-27).
-- `source/`: authoring inputs. Not packaged. `source/map/box_arena.txt` is the MVP box list.
+- `source/`: authoring inputs. Not packaged.
+  - `source/map/box_arena.blend`: the map (Blender 5.0.1). Collision: mesh objects or materials whose
+    name ends in `-col` (D-32). Not committed yet: D-24 says source files use Git LFS, which this repo
+    does not have set up.
+  - `source/map/export_glb.py`: exports the `.blend` to `source/map/box_arena.glb` (derived, ignored).
+  - `source/map/box_arena.txt`: the old box list, superseded by the `.blend`. To be removed.
 
 ## Status of values
 
@@ -20,4 +25,11 @@ representation, filter value `world`, int bit widths. Each will be set with the 
 
 ## Build
 
-Not yet. `omg-pack` (OMG-14) and the cooker (OMG-27) are next.
+Not yet. Export, then cook and pack:
+
+```
+blender-py source/map/export_glb.py -- source/map/box_arena.blend source/map/box_arena.glb
+```
+
+`blender-py` is the bpy 5.0.1 runner in `~/.local/share/omg-tools/`. The cooker (OMG-27) and `omg-pack`
+(OMG-14) are next.
