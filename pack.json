@@ -1,6 +1,6 @@
 {
   "name": "rocket-duel",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "engine_api": "0.1",
   "root": true,
   "dependencies": [],
