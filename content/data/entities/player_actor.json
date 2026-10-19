@@ -2,5 +2,12 @@
   "kind": "entity",
   "type": "PlayerActor",
   "category": "actor",
-  "schema": "data/schema/player_actor.json"
+  "schema": "data/schema/player_actor.json",
+  "mover": {
+    "variant": "character",
+    "params": "data/movers/character.json"
+  },
+  "script": {
+    "mover_step": "scripts/character_mover.lua"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "rocket-duel",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "engine_api": "0.1",
   "root": true,
   "dependencies": [],
@@ -11,6 +11,15 @@
       "variant": "straight",
       "capabilities": [
         "sweep"
+      ]
+    },
+    {
+      "file": "scripts/character_mover.lua",
+      "place": "mover_step",
+      "variant": "character",
+      "capabilities": [
+        "sweep",
+        "divide"
       ]
     }
   ],
