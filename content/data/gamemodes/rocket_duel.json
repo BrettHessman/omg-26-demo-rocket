@@ -1,0 +1,10 @@
+{
+  "kind": "gamemode",
+  "id": "rocket_duel",
+  "free_for_all": true,
+  "kill_limit": 20,
+  "time_limit_ticks": 36000,
+  "respawn_delay_ticks": 0,
+  "starting_health": 100,
+  "map": "data/maps/box_arena.json"
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "schema",
+  "entity": "PlayerActor",
+  "fields": [
+    {"name": "position", "kind": "vec3", "unit": "mm", "authority": "predicted", "rate": "high", "criticality": "critical"},
+    {"name": "velocity", "kind": "vec3", "unit": "mm_per_tick", "authority": "predicted", "rate": "high", "criticality": "critical"},
+    {"name": "grounded", "kind": "bool", "authority": "predicted", "rate": "high", "criticality": "critical"},
+    {"name": "health", "kind": "int", "bits": 16, "unit": "hp", "authority": "server", "rate": "low", "criticality": "critical"},
+    {"name": "dead", "kind": "bool", "authority": "server", "rate": "low", "criticality": "critical"}
+  ]
+}

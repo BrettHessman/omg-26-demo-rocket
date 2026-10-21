@@ -1,0 +1,14 @@
+{
+  "kind": "entity",
+  "type": "ActorProjectileRocket",
+  "category": "projectile",
+  "schema": "data/schema/rocket.json",
+  "mover": {
+    "variant": "straight",
+    "params": "data/movers/straight.json"
+  },
+  "script": {
+    "mover_step": "scripts/rocket_mover.lua"
+  },
+  "removal": ["contact", "lifetime"]
+}

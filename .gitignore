@@ -12,3 +12,8 @@ profile.svg
 
 # Time trace
 trace.json
+
+# Derived map intermediates (regenerated from source/map/*.blend)
+source/map/*.glb
+*.blend1
+dist/

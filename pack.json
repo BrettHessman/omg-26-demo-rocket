@@ -1,0 +1,32 @@
+{
+  "name": "rocket-duel",
+  "version": "0.3.1",
+  "engine_api": "0.1",
+  "root": true,
+  "dependencies": [],
+  "scripts": [
+    {
+      "file": "scripts/rocket_mover.lua",
+      "place": "mover_step",
+      "variant": "straight",
+      "capabilities": [
+        "sweep"
+      ]
+    },
+    {
+      "file": "scripts/character_mover.lua",
+      "place": "mover_step",
+      "variant": "character",
+      "capabilities": [
+        "sweep",
+        "divide"
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "source": "source/map/box_arena.glb",
+      "out": "map/box_arena.omgcol"
+    }
+  ]
+}
