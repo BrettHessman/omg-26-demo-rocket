@@ -1,0 +1,13 @@
+{
+  "kind": "schema",
+  "entity": "WeaponSlot",
+  "fields": [
+    {
+      "name": "item",
+      "kind": "actor_handle",
+      "authority": "server",
+      "rate": "once",
+      "criticality": "critical"
+    }
+  ]
+}

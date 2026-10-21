@@ -1,0 +1,7 @@
+{
+  "kind": "entity",
+  "type": "WeaponSlot",
+  "category": "actor",
+  "schema": "data/schema/weapon_slot.json",
+  "owner": "PlayerActor"
+}

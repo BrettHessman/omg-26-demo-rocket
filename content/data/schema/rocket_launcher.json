@@ -1,0 +1,33 @@
+{
+  "kind": "schema",
+  "entity": "ActorRocketLauncher",
+  "fields": [
+    {
+      "name": "ammo",
+      "kind": "int",
+      "bits": 8,
+      "unit": "rockets",
+      "authority": "server",
+      "rate": "low",
+      "criticality": "critical"
+    },
+    {
+      "name": "cooldown",
+      "kind": "int",
+      "bits": 16,
+      "unit": "ticks",
+      "authority": "server",
+      "rate": "low",
+      "criticality": "critical"
+    },
+    {
+      "name": "player",
+      "kind": "int",
+      "bits": 32,
+      "unit": "player_id",
+      "authority": "server",
+      "rate": "once",
+      "criticality": "critical"
+    }
+  ]
+}

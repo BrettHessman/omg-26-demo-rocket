@@ -1,0 +1,8 @@
+{
+  "move_forward": "keyboard_key_alphanumeric_W",
+  "move_back": "keyboard_key_alphanumeric_S",
+  "move_left": "keyboard_key_alphanumeric_A",
+  "move_right": "keyboard_key_alphanumeric_D",
+  "jump": "keyboard_key_edit_space",
+  "fire": "mouse_button_left"
+}

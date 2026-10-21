@@ -1,0 +1,11 @@
+{
+  "kind": "entity",
+  "type": "ActorRocketLauncher",
+  "category": "actor",
+  "schema": "data/schema/rocket_launcher.json",
+  "owner": "WeaponSlot",
+  "weapon": "data/weapons/rocket_launcher.json",
+  "script": {
+    "weapon_step": "scripts/rocket_launcher.lua"
+  }
+}

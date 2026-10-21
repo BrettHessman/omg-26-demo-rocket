@@ -3,5 +3,7 @@
   "variant": "character",
   "run_speed_mm_per_s": 8000,
   "jump_speed_mm_per_s": 7000,
-  "gravity_mm_per_s2": 20000
+  "gravity_mm_per_s2": 20000,
+  "knockback_k": 25000,
+  "mass": 200
 }

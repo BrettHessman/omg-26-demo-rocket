@@ -1,0 +1,33 @@
+{
+  "kind": "schema",
+  "entity": "PlayerState",
+  "fields": [
+    {
+      "name": "score",
+      "kind": "int",
+      "bits": 16,
+      "unit": "points",
+      "authority": "server",
+      "rate": "low",
+      "criticality": "critical"
+    },
+    {
+      "name": "kills",
+      "kind": "int",
+      "bits": 16,
+      "unit": "kills",
+      "authority": "server",
+      "rate": "low",
+      "criticality": "critical"
+    },
+    {
+      "name": "deaths",
+      "kind": "int",
+      "bits": 16,
+      "unit": "deaths",
+      "authority": "server",
+      "rate": "low",
+      "criticality": "critical"
+    }
+  ]
+}

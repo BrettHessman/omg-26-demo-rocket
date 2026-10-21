@@ -1,6 +1,6 @@
 {
   "name": "rocket-duel",
-  "version": "0.3.1",
+  "version": "0.8.0",
   "engine_api": "0.1",
   "root": true,
   "dependencies": [],
@@ -20,6 +20,59 @@
       "capabilities": [
         "sweep",
         "divide"
+      ]
+    },
+    {
+      "file": "scripts/player_actor.lua",
+      "place": "on_spawn",
+      "capabilities": [
+        "spawn",
+        "set_field"
+      ]
+    },
+    {
+      "file": "scripts/player_actor.lua",
+      "place": "on_impulse",
+      "capabilities": [
+        "divide",
+        "vector"
+      ]
+    },
+    {
+      "file": "scripts/rocket.lua",
+      "place": "on_hit",
+      "capabilities": [
+        "damage",
+        "query",
+        "line_of_sight",
+        "divide",
+        "vector"
+      ]
+    },
+    {
+      "file": "scripts/rocket_launcher.lua",
+      "place": "weapon_step",
+      "capabilities": [
+        "spawn",
+        "divide",
+        "vector"
+      ]
+    },
+    {
+      "file": "scripts/gamemode.lua",
+      "place": "match_update",
+      "capabilities": [
+        "spawn",
+        "destroy",
+        "set_field"
+      ]
+    },
+    {
+      "file": "scripts/client_effects.lua",
+      "place": "client_effects",
+      "capabilities": [
+        "mirror",
+        "present"
       ]
     }
   ],

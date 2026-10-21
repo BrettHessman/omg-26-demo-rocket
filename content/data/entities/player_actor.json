@@ -2,12 +2,21 @@
   "kind": "entity",
   "type": "PlayerActor",
   "category": "actor",
+  "capsule": {"radius_mm": 400, "height_mm": 1800},
   "schema": "data/schema/player_actor.json",
   "mover": {
     "variant": "character",
     "params": "data/movers/character.json"
   },
+  "loadout": [
+    "rocket_launcher"
+  ],
+  "owns": [
+    "WeaponSlot"
+  ],
   "script": {
-    "mover_step": "scripts/character_mover.lua"
+    "mover_step": "scripts/character_mover.lua",
+    "on_spawn": "scripts/player_actor.lua",
+    "on_impulse": "scripts/player_actor.lua"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "kind": "entity",
+  "type": "PlayerState",
+  "category": "system",
+  "schema": "data/schema/player_state.json"
+}

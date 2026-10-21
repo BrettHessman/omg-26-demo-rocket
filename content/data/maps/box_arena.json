@@ -8,8 +8,5 @@
     {"position_mm": [28000, 28000, 2500], "yaw_deg": 225},
     {"position_mm": [-28000, 28000, 2500], "yaw_deg": 315},
     {"position_mm": [28000, -28000, 2500], "yaw_deg": 135}
-  ],
-  "ammo_pickups": [
-    {"position_mm": [0, 0, 500], "ammo": 5, "respawn_ticks": 600}
   ]
 }

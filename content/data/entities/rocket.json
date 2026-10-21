@@ -8,7 +8,11 @@
     "params": "data/movers/straight.json"
   },
   "script": {
-    "mover_step": "scripts/rocket_mover.lua"
+    "mover_step": "scripts/rocket_mover.lua",
+    "on_hit": "scripts/rocket.lua"
   },
-  "removal": ["contact", "lifetime"]
+  "removal": [
+    "contact",
+    "lifetime"
+  ]
 }
